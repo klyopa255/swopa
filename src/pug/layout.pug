@@ -28,7 +28,7 @@ html(class='page  no-js', lang='en')
             .header__logo
               a(href="/").header__logo-link
                 .header__logo-img
-                  img(src="/img/swopa_logo.png", alt="")
+                  img(src="/img/logo.svg", alt="")
 
             nav.header__nav.main-nav
               ul.main-nav__list
@@ -91,11 +91,12 @@ html(class='page  no-js', lang='en')
               form(action="#")
                 input#name(type="text", name="name", placeholder="Name*")
                 input#email(type="text", name="email", placeholder="E-mail*")
-                select#subject
-                  option(value="0", disabled selected) Subject*
-                  option(value="1") Example 1
-                  option(value="2") Example 2
-                  option(value="3") Example 3
+                .contact__select-wrapper
+                  select#subject
+                    option(value="0", disabled selected) Subject*
+                    option(value="1") Example 1
+                    option(value="2") Example 2
+                    option(value="3") Example 3
                 textarea#message(name="message", cols="30", rows="5" placeholder="Message*")
                 input(type="submit", value="Send")
 

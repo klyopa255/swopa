@@ -21,4 +21,22 @@
     margin: 0 auto;
     padding: 0 15px;
   }
+
+  &__logo {
+    width: 120px;
+
+    &-img {
+
+      & img {
+        @include img;
+      }
+    }
+  }
+}
+
+@media (max-width: $screen-xs) {
+
+  .header {
+    padding-top: 20px;
+  }
 }

@@ -9,6 +9,40 @@
     text-align: center;
   }
 
+  &__select-wrapper {
+    position: relative;
+    width: 100%;
+
+    &::before,&::after {
+      position: absolute;
+      content: '';
+      color: $links-color;
+      top: 23px;
+      right: 22px;
+      z-index: 0;
+      width: 15px;
+      height: 1px;
+      background-color: $links-color;
+      transform: rotate(45deg);
+    }
+
+    &::after {
+      transform: rotate(-45deg);
+      right: 12px;
+    }
+
+    &--active {
+      
+      &::before {
+        transform: rotate(-45deg);
+      }
+
+      &::after {
+        transform: rotate(45deg);
+      }
+    }
+  }
+
   & form {
     display: flex;
     flex-direction: column;
@@ -35,23 +69,34 @@
       font-family: $helvetica-light;
       font-size: 16px;
       line-height: 30px;
+      background: none;
       background-color: $links-color;
       color: #fff;
       width: 165px;
       border-radius: 25px;
       cursor: pointer;
+      appearance: none;
     }
   }
 
   & select {
+    position: relative;
+    width: 100%;
     font-family: $helvetica-light;
     font-size: 16px;
     line-height: 30px;
+    background: transparent;
     border: 1px solid $links-color;
     color: $text-color;
     padding: 10px 20px;
     outline: none;
     margin-bottom: 25px;
+    appearance: none;
+
+    & option {
+      width: 100%;
+      appearance: none;
+    }
   }
 
   & textarea {

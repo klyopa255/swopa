@@ -10,6 +10,18 @@ ready(function(){
 
   console.log('DOM ready');
 
+  var value = 0;
+
+  $('#subject').on('click', function(e){
+    value = (value==0)?1:0;
+    $('.contact__select-wrapper').toggleClass('contact__select-wrapper--active');
+  });
+
+  $('#subject').on('blur', function(e){
+    value = (value==0)?1:0;
+    $('.contact__select-wrapper').toggleClass('contact__select-wrapper--active');
+  });
+
   if ($('.owl-carousel.owl-carousel').length) {
     $('.owl-carousel.owl-carousel').owlCarousel({
       nav: true,
