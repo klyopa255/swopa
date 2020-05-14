@@ -1,0 +1,92 @@
+.contact {
+
+  &__container {
+    @include container;
+  }
+
+  &__title {
+    font-family: $roboto-light;
+    text-align: center;
+  }
+
+  & form {
+    display: flex;
+    flex-direction: column;
+    width: 555px;
+    font-family: $helvetica-light;
+    font-size: 16px;
+    line-height: 30px;
+  }
+
+  & input {
+    border: 1px solid $links-color;
+    padding: 10px 20px;
+    margin-bottom: 25px;
+    outline: none;
+
+    &[type="text"] {
+      font-family: $helvetica-light;
+      font-size: 16px;
+      line-height: 30px;
+      color: $text-color;
+    }
+
+    &[type="submit"] {
+      font-family: $helvetica-light;
+      font-size: 16px;
+      line-height: 30px;
+      background-color: $links-color;
+      color: #fff;
+      width: 165px;
+      border-radius: 25px;
+      cursor: pointer;
+    }
+  }
+
+  & select {
+    font-family: $helvetica-light;
+    font-size: 16px;
+    line-height: 30px;
+    border: 1px solid $links-color;
+    color: $text-color;
+    padding: 10px 20px;
+    outline: none;
+    margin-bottom: 25px;
+  }
+
+  & textarea {
+    font-family: $helvetica-light;
+    font-size: 16px;
+    line-height: 30px;
+    border: 1px solid $links-color;
+    color: $text-color;
+    padding: 10px 20px;
+    outline: none;
+    margin-bottom: 25px;
+  }
+
+  &--popup {
+
+    & form {
+      width: 455px;
+      margin: 0 auto;
+    }
+  }
+}
+
+@media (max-width: $screen-sm) {
+
+  .contact {
+
+    & form {
+      width: 100%;
+    }
+
+    &--popup {
+
+      & form {
+        width: 90%;
+      }
+    }
+  }
+}

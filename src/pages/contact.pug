@@ -1,0 +1,35 @@
+extends ../pug/layout.pug
+
+block meta
+  title Главная
+  meta(name='description', content='')
+
+//- block append head
+//-   link(rel='stylesheet', href='css/some.css')
+
+block content
+  section(style="background-image: url('/img/hands.jpg');").heading.heading--inner
+    .heading__container
+      h1.heading__promo.heading__promo--title Contact
+      p.heading__breadcrumbs Home  —  Contact
+
+  section.contact
+    .contact__container
+      form(action="#")
+        input#name(type="text", name="name", placeholder="Name*")
+        input#email(type="text", name="email", placeholder="E-mail*")
+        select#subject
+          option(value="0", disabled selected) Subject*
+          option(value="1") Example 1
+          option(value="2") Example 2
+          option(value="3") Example 3
+        textarea#message(name="message", cols="30", rows="5" placeholder="Message*")
+        input(type="submit", value="Send")
+
+
+
+//- block footer
+//-   p footer
+
+//- block append page-bottom
+//-   script(src='js/some.js')

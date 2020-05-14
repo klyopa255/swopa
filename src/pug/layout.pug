@@ -1,0 +1,105 @@
+//- Стандартный шаблон страницы
+include mixins.pug
+
+doctype html
+html(class='page  no-js', lang='en')
+
+  head
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+
+    block meta
+      title Home
+
+    block head
+      link(rel='stylesheet', href='/plugins/owl/assets/owl.carousel.min.css')
+      link(rel='stylesheet', href='/plugins/owl/assets/owl.theme.default.css')
+      link(rel='stylesheet', href='css/style.css')
+      script.
+        document.documentElement.className = document.documentElement.className.replace('no-js', 'js');
+
+  body
+    noscript You have javascript disabled. It scares.
+
+    .page__inner
+      block header
+        header.page__header.header
+          .header__container
+            .header__logo
+              a(href="/").header__logo-link
+                .header__logo-img
+                  img(src="/img/swopa_logo.png", alt="")
+
+            nav.header__nav.main-nav
+              ul.main-nav__list
+                li.main-nav__item
+                  a(href="/wholesale.html").main-nav__link Wholesale
+                li.main-nav__item
+                  a(href="/private-label.html").main-nav__link Private Label
+                li.main-nav__item
+                  a(href="/bulk.html").main-nav__link Bulk
+                li.main-nav__item
+                  a(href="/our-team.html").main-nav__link Our team
+                li.main-nav__item
+                  a(href="/about-us.html").main-nav__link About us
+                li.main-nav__item
+                  a(href="/contact.html").main-nav__link Contact
+              button.main-nav__button Open/close navigation list
+
+
+      .page__content
+        block content
+          section(style='height: 500px; text-align: center; padding-top: 200px; background-color: green;')
+            h1 Just to be height
+
+      .page__footer-wrapper
+        block footer
+          footer.page-footer
+            .page-footer__container
+              .page-footer__text-section
+                h2.page-footer__title Say hello!
+                p.page-footer__text Swiss Organic Partners AG Isenrietstrasse 19 CH-8617 Mönchaltorf
+                  a(href="mailto:hello@swopa.ch").page-footer__link hello@swopa.ch
+              .page-footer__partners-section.partners
+                ul.partners__list
+                  li.partners__item
+                    a(href="#").partners__link
+                      .partners__img
+                        img(src="/img/partners1.jpg", alt="")
+                  li.partners__item
+                    a(href="#").partners__link
+                      .partners__img
+                        img(src="/img/partners2.jpg", alt="")
+                  li.partners__item
+                    a(href="#").partners__link
+                      .partners__img
+                        img(src="/img/partners3.jpg", alt="")
+
+            .page-footer__copyright
+              .page-footer__copyright-container
+                p.page-footer__copyright-text © Copyright - SWISS ORGANIC PARTNERS AG
+                a(href="#").page-footer__copyright-link Privacy Policy
+
+    block page-bottom
+      a(href="#")#fix-button.fix-button.popup-link Ask for more details
+      #popup.popup
+        .popup__overlay
+          .popup__container
+            #popup-close.popup__close
+            .contact.contact--popup
+              h2.contact__title Ask for more details
+              form(action="#")
+                input#name(type="text", name="name", placeholder="Name*")
+                input#email(type="text", name="email", placeholder="E-mail*")
+                select#subject
+                  option(value="0", disabled selected) Subject*
+                  option(value="1") Example 1
+                  option(value="2") Example 2
+                  option(value="3") Example 3
+                textarea#message(name="message", cols="30", rows="5" placeholder="Message*")
+                input(type="submit", value="Send")
+
+      script(src='/plugins/jquery/jquery-3.5.0.min.js')
+      script(src='/plugins/owl/owl.carousel.min.js')
+      script(src='js/vendors.min.js')
+      script(src='js/script.min.js')

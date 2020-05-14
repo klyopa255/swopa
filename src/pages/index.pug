@@ -1,0 +1,71 @@
+extends ../pug/layout.pug
+
+block meta
+  title Главная
+  meta(name='description', content='')
+
+//- block append head
+//-   link(rel='stylesheet', href='css/some.css')
+
+block content
+  section(style="background-image: url('/img/bg.jpg');").heading
+    .heading__container
+      h1.heading__title Welcome
+      p.heading__promo Your trusted Partner & Supplier for 100% Swiss Organic CBD
+
+  section.content-section.content-section--low-margin
+    .content-section__container
+      h2.content-section__title What we do and offer
+      .content-section__flex-container
+        .content-section__media
+          iframe(height="315", src="https://www.youtube.com/embed/Vu1LCN8RcjU", frameborder="0", allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture", allowfullscreen)
+        .content-section__text
+          //- p.content-section__text-bold
+          p.content-section__text-default Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam eaque ipsa, quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt, explicabo. Nemo enim ipsam voluptatem, quia voluptas sit, aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos, qui ratione voluptatem sequi nesciunt, neque porro quisquam est, qui dolorem ipsum, quia dolor sit amet consectetur adipisci[ng] velit, sed quia non numquam  eius modi tempora inci[di]dunt, ut labore et dolore magnam aliquam quaerat voluptatem.
+
+  section.cards
+    .cards__container
+      ul.cards__list
+        li.cards__item
+          a(href="/wholesale.html").cards__link
+            .cards__img
+              img(src="/img/bottles.png", alt="")
+            h3.cards__title Wholesale
+        li.cards__item
+          a(href="/private-label.html").cards__link
+            .cards__img
+              img(src="/img/bottles2.png", alt="")
+            h3.cards__title White/private label
+        li.cards__item
+          a(href="/bulk.html").cards__link
+            .cards__img
+              img(src="/img/maria.png", alt="")
+            h3.cards__title Bulk
+
+  section.content-section
+    .content-section__container
+      h2.content-section__title Our USPs
+      .content-section__flex-container
+        .content-section__media
+          img(src="/img/rails.jpg", alt="")
+        .content-section__text
+          //- p.content-section__text-bold We strive to improve life by utilising nature’s secret ingredients and making organic CBD products of the highest quality accessible to everyone
+          p.content-section__text-default Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam eaque ipsa, quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt, explicabo. Nemo enim ipsam voluptatem, quia voluptas sit, aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos, qui ratione voluptatem sequi nesciunt, neque porro quisquam est, qui dolorem ipsum, quia dolor sit amet consectetur adipisci[ng] velit, sed quia non.
+          a(href="#").content-section__link.link.popup-link more details
+
+  section.content-section
+    .content-section__container
+      h2.content-section__title Who we are
+      .content-section__flex-container
+        .content-section__media
+          img(src="/img/peoples.jpg", alt="")
+        .content-section__text
+          p.content-section__text-bold We strive to improve life by utilising nature’s secret ingredients and making organic CBD products of the highest quality accessible to everyone
+          p.content-section__text-small Growing up with alpine mountain landscape and crystal-clear lakes, we see ourselves as children of nature. From an early age we had a close relationship with our land and agriculture. The regular visits to the farm have taught us the importance of taking care of nature. This is why we stand for organic and sustainable cultivation
+          a(href="#").content-section__link.link.popup-link more details
+
+//- block footer
+//-   p footer
+
+//- block append page-bottom
+//-   script(src='js/some.js')

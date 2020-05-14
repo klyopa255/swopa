@@ -1,0 +1,33 @@
+.partners {
+
+  &__list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  &__item {
+    margin-right: 30px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+
+@media (max-width: $screen-xs) {
+
+  .partners {
+
+    &__list {
+      flex-direction: column;
+    }
+
+    &__item {
+      margin-right: 0;
+    }
+  }
+}

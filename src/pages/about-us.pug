@@ -1,0 +1,97 @@
+extends ../pug/layout.pug
+
+block meta
+  title Главная
+  meta(name='description', content='')
+
+//- block append head
+//-   link(rel='stylesheet', href='/plugins/owl/assets/owl.carousel.min.css')
+//-   link(rel='stylesheet', href='/plugins/owl/assets/owl.theme.default.css')
+
+block content
+  section(style="background-image: url('/img/bg-maria2.jpg');").heading.heading--inner
+    .heading__container
+      h1.heading__promo.heading__promo--title About us
+      p.heading__breadcrumbs Home  —  About us
+
+  section.content-section
+    .content-section__container
+      .content-section__flex-container.content-section__flex-container--reverse
+        .content-section__media
+          img(src="/img/img-maria.jpg", alt="")
+        .content-section__text.content-section__text--nomargin
+          h2.content-section__title From field to shelf in-house
+          p.content-section__text-default From the deep love of the power of nature, Swiss Organic Partners AG was founded by an experienced and dynamic team, consisting of people with experience in certified organic agriculture, marketing, IT and logistics. Through our organic product range and Swiss know-how, we want to make humanity aware of the healing properties of the cannabis plant. And logistics. Through our organic product range and Swiss know-how, we want to make humanity aware of the healing properties of the cannabis plant.
+
+  section.content-section
+    .content-section__container
+      .content-section__flex-container
+        .content-section__media
+          img(src="/img/img-growing.jpg", alt="")
+        .content-section__text.content-section__text--nomargin
+          h2.content-section__title Organic farming
+          p.content-section__text-default From the deep love of the power of nature, Swiss Organic Partners AG was founded by an experienced and dynamic team, consisting of people with experience in certified organic agriculture, marketing, IT and logistics. Through our organic product range and Swiss know-how, we want to make humanity aware of the healing properties of the cannabis plant. And logistics. Through our organic product range and Swiss know-how, we want to make humanity aware of the healing properties of the cannabis plant.
+
+  section.content-section
+    .content-section__container
+      .content-section__flex-container.content-section__flex-container--reverse
+        .content-section__media
+          img(src="/img/img-bottles.jpg", alt="")
+        .content-section__text.content-section__text--nomargin
+          h2.content-section__title Extraction methods
+          p.content-section__text-default From the deep love of the power of nature, Swiss Organic Partners AG was founded by an experienced and dynamic team, consisting of people with experience in certified organic agriculture, marketing, IT and logistics. Through our organic product range and Swiss know-how, we want to make humanity aware of the healing properties of the cannabis plant. And logistics. Through our organic product range and Swiss know-how, we want to make humanity aware of the healing properties of the cannabis plant.
+
+  section.slider-section
+    .slider-section__container
+      h2.slider-section__title Our partners
+      ul.slider-section__list.owl-carousel.owl-carousel-4.owl-theme
+        li.slider-section__item.slider-section__item--no-overlay
+          .slider-section__img.slider-section__img--normal
+            img(src="/img/juckerfarm.png", alt="")
+          h3.slider-section__item-title.slider-section__item-title--partners Jucker Farm
+          p.slider-section__item-description One of the leading agrotourism, agriculture producer and distributor in Switzerland
+        li.slider-section__item.slider-section__item--no-overlay
+          .slider-section__img.slider-section__img--normal
+            img(src="/img/fulfillment.png", alt="")
+          h3.slider-section__item-title.slider-section__item-title--partners Fulfillment Swiss
+          p.slider-section__item-description Our reliable full-service logistics and fulfilment specialist for Europe, US and Asia
+        li.slider-section__item.slider-section__item--no-overlay
+          .slider-section__img.slider-section__img--normal
+            img(src="/img/wolf.png", alt="")
+          h3.slider-section__item-title.slider-section__item-title--partners Wolf Biogemüse
+          p.slider-section__item-description Organic farming pioneers and Bio Suisse certified
+        li.slider-section__item.slider-section__item--no-overlay
+          .slider-section__img.slider-section__img--normal
+            img(src="/img/double.png", alt="")
+          h3.slider-section__item-title.slider-section__item-title--partners Double Green
+          p.slider-section__item-description More than 15 years experience in recreational and medical cannabis cultivation
+        li.slider-section__item.slider-section__item--no-overlay
+          .slider-section__img.slider-section__img--normal
+            img(src="/img/double.png", alt="")
+          h3.slider-section__item-title.slider-section__item-title--partners Double Green
+          p.slider-section__item-description More than 15 years experience in recreational and medical cannabis cultivation
+        li.slider-section__item.slider-section__item--no-overlay
+          .slider-section__img.slider-section__img--normal
+            img(src="/img/double.png", alt="")
+          h3.slider-section__item-title.slider-section__item-title--partners Double Green
+          p.slider-section__item-description More than 15 years experience in recreational and medical cannabis cultivation
+        li.slider-section__item.slider-section__item--no-overlay
+          .slider-section__img.slider-section__img--normal
+            img(src="/img/double.png", alt="")
+          h3.slider-section__item-title.slider-section__item-title--partners Double Green
+          p.slider-section__item-description More than 15 years experience in recreational and medical cannabis cultivation
+
+  section.content-section
+    .content-section__container
+      .content-section__flex-container.content-section__flex-container--reverse
+        .content-section__media
+          iframe(height="315", src="https://www.youtube.com/embed/Vu1LCN8RcjU", frameborder="0", allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture", allowfullscreen)
+        .content-section__text.content-section__text--nomargin
+          p.content-section__text-default.content-section__text-default--forgotten-title-because-maria Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam eaque ipsa, quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt, explicabo. Nemo enim ipsam voluptatem, quia voluptas sit, aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos, qui ratione voluptatem sequi nesciunt, neque porro quisquam est, qui dolorem ipsum, quia dolor sit.
+
+//- block footer
+//-   p footer
+
+//- block append page-bottom
+//-   script(src='/plugins/jquery/jquery-3.5.0.min.js')
+//-   script(src='/plugins/owl/owl.carousel.min.js')

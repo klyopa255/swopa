@@ -1,0 +1,72 @@
+extends ../pug/layout.pug
+
+block meta
+  title Главная
+  meta(name='description', content='')
+
+//- block append head
+//-   link(rel='stylesheet', href='css/some.css')
+
+block content
+  section(style="background-image: url('/img/br-rails.jpg');").heading.heading--inner
+    .heading__container
+      h1.heading__promo.heading__promo--title Our team
+      p.heading__breadcrumbs Home  —  Our team
+
+  section.team
+    .team__container
+      ul.team__list
+        li.team__item
+          .team__img
+            img(src="/img/team0.jpg", alt="")
+          p.team__name Matteo Delbrück
+          p.team__spec Co-Founder & CEO
+        li.team__item
+          .team__img
+            img(src="/img/team1.jpg", alt="")
+          p.team__name Roland Meuter
+          p.team__spec Chief Product Officer
+        li.team__item
+          .team__img
+            img(src="/img/team2.jpg", alt="")
+          p.team__name Michael Ponnath
+          p.team__spec Chief Operations Officer
+        li.team__item
+          .team__img
+            img(src="/img/team3.jpg", alt="")
+          p.team__name Vivienne Estoppey
+          p.team__spec Operations Manager
+        li.team__item
+          .team__img
+            img(src="/img/team4.jpg", alt="")
+          p.team__name Cristina Palazzi
+          p.team__spec Business Development Manager
+        li.team__item
+          .team__img
+            img(src="/img/team5.jpg", alt="")
+          p.team__name Eva Hundemer
+          p.team__spec Director Brand & Content Marketing
+        li.team__item
+          .team__img
+            img(src="/img/team7.jpg", alt="")
+          p.team__name Rebecca Wicki
+          p.team__spec Social Media
+        li.team__item
+          .team__img
+            img(src="/img/team8.jpg", alt="")
+          p.team__name Lukas Fuhrimann
+          p.team__spec Graphic Designer
+        li.team__item
+          .team__img
+            img(src="/img/team9.jpg", alt="")
+          p.team__name Wesam Samara
+          p.team__spec IT guru
+      .team__togather
+        img(src="/img/team.jpg", alt="")
+
+
+//- block footer
+//-   p footer
+
+//- block append page-bottom
+//-   script(src='js/some.js')

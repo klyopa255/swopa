@@ -1,0 +1,77 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+.owl-stage {
+  display: flex;
+}
+
+.owl-item {
+  display: flex;
+  padding: 1px;
+}
+
+.owl-nav button {
+  outline: none;
+}
+
+.owl-carousel .owl-nav button.owl-next span, .owl-carousel .owl-nav button.owl-prev span {
+  position: absolute;
+  font-size: 0;
+  line-height: 0;
+  width: 33px;
+  height: 2px;
+  top: 50%;
+  margin-top: -1px;
+  background: #000;
+  left: 21px;
+
+  &::before, &::after {
+    position: absolute;
+    content: '';
+    width: 17px;
+    height: 2px;
+    top: -7px;
+    left: 18px;
+    background-color: #000;
+    transform: rotate(45deg);
+  }
+
+  &::after {
+    top: 7px;
+    transform: rotate(-45deg);
+  }
+}
+
+.owl-carousel .owl-nav button.owl-prev span {
+  transform: rotate(180deg);
+}
+
+@media (max-width: $screen-xs) {
+  .owl-carousel .owl-nav button.owl-next, .owl-carousel .owl-nav button.owl-prev, .owl-carousel button.owl-dot {
+    width: 20px;
+    height: 20px;
+    border: none;
+  }
+
+  .owl-theme .owl-dots {
+    padding-top: 20px;
+    margin-bottom: 25px;
+  }
+
+  .owl-theme .owl-dots .owl-dot {
+    margin-right: 10px;
+    outline: none;
+  }
+
+  .owl-theme .owl-dots .owl-dot span {
+    position: relative;
+    padding: 0;
+    margin: 0;
+    left: -1px;
+  }
+}

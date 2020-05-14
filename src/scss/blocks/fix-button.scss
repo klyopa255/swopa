@@ -1,0 +1,32 @@
+.fix-button {
+  display: none;
+  position: fixed;
+  right: -71px;
+  top: 50%;
+  font-family: $roboto-medium;
+  font-size: 18px;
+  color: $links-color;
+  background-color: #fff;
+  padding: 20px;
+  border: 1px solid $links-color;
+  border-bottom: none;
+  text-decoration: none;
+  transform: rotate(-90deg);
+  z-index: 1;
+
+  &--active {
+    display: block;
+  }
+}
+
+@media (max-width: $screen-xs) {
+
+  .fix-button {
+    top: 100%;
+    left: 0;
+    right: 0;
+    margin-top: -65px;
+    text-align: center;
+    transform: none;
+  }
+}
