@@ -132,6 +132,14 @@
       & form {
         width: 90%;
       }
+
+      & h2 {
+        margin-top: 0;
+      }
+
+      & textarea {
+        height: 80px;
+      }
     }
   }
 }

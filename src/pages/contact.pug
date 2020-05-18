@@ -8,7 +8,7 @@ block meta
 //-   link(rel='stylesheet', href='css/some.css')
 
 block content
-  section(style="background-image: url('/img/hands.jpg');").heading.heading--inner
+  section.heading.heading--inner(style="background-image: url('/img/hands.jpg');")
     .heading__container
       h1.heading__promo.heading__promo--title Contact
       p.heading__breadcrumbs Home  —  Contact
@@ -20,7 +20,7 @@ block content
         input#email(type="text", name="email", placeholder="E-mail*")
         .contact__select-wrapper
           select#subject
-            option(value="0", disabled selected) Subject*
+            option(value="0", disabled, selected) Subject*
             option(value="1") Example 1
             option(value="2") Example 2
             option(value="3") Example 3
